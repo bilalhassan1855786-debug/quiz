@@ -1,11 +1,11 @@
-export interface Question {
+export type QuizQuestion = {
   question: string
   options: string[]
-  correctIndex: number
+  answer: string
 }
 
-export interface Quiz {
+export type Quiz = {
   id: string
   title: string
-  questions: Question[]
+  questions: QuizQuestion[]
 }
